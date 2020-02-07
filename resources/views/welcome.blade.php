@@ -4,97 +4,153 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>CSS Grid Example</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
+       
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
+        <header>
+            <div class="top-nav container">
+                <div class="logo">CSS Grid Example</div>
+                <ul>
+                    <li>
+                        <a href="#">Shop</a>
+                        <a href="#">About</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Cart</a>
+                    </li>
+                </ul>
+            </div> <!-- end top-nav -->
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
+            <div class="hero container">
+                <div class="hero-copy">
+                    <h1>CSS Grid Example</h1>
+                    <p>A practical example of using CSS Grid for a typical website layout.</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="button button-white">Button 1</a>
+                        <a href="#" class="button button-white">Button 2</a>
+                    </div>
+                </div> <!-- end of hero-copy -->
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+                <div class="hero-image">
+                    <img src="img/macbook-pro-laravel.png" alt="hero image">
+                </div> 
+            </div> <!-- end hero -->
+        </header>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+        <div class="featured-section">
+            <div class="container">
+                <h1 class="text-center">CSS Grid Example</h1>
+
+                <p class="section-description">The opportunity to join Citrus Systems greatly interests me 
+                because of an opportunity to work in comfortable working conditions and a friendly atmosphere. 
+                As a holder of Computer Programming diploma, I can competently execute JavaScript, object-oriented
+                programing, SQL and many more IT related tasks. </p>
+
+                <div class="text-center button-container">
+                    <a href="#" class="button">Featured</a>
+                    <a href="#" class="button">On Sale</a>
                 </div>
+            
+
+            <div class="products text-center">
+                <div class="product">
+                    <a href="#"><img src="img/macbook-pro.png" alt="product"></a>
+                    <a href="#"><span class="product-name">MacBook Pro</span></a>
+                    <div class="product-price">$2499.99</div>
+                </div>
+                <div class="product">
+                    <a href="#"><img src="img/macbook-pro.png" alt="product"></a>
+                    <a href="#"><span class="product-name">MacBook Pro</span></a>
+                    <div class="product-price">$2499.99</div>
+                </div>
+                <div class="product">
+                    <a href="#"><img src="img/macbook-pro.png" alt="product"></a>
+                    <a href="#"><span class="product-name">MacBook Pro</span></a>
+                    <div class="product-price">$2499.99</div>
+                </div>
+                <div class="product">
+                    <a href="#"><img src="img/macbook-pro.png" alt="product"></a>
+                    <a href="#"><span class="product-name">MacBook Pro</span></a>
+                    <div class="product-price">$2499.99</div>
+                </div>
+                <div class="product">
+                    <a href="#"><img src="img/macbook-pro.png" alt="product"></a>
+                    <a href="#"><span class="product-name">MacBook Pro</span></a>
+                    <div class="product-price">$2499.99</div>
+                </div>
+                <div class="product">
+                    <a href="#"><img src="img/macbook-pro.png" alt="product"></a>
+                    <a href="#"><span class="product-name">MacBook Pro</span></a>
+                    <div class="product-price">$2499.99</div>
+                </div>
+                <div class="product">
+                    <a href="#"><img src="img/macbook-pro.png" alt="product"></a>
+                    <a href="#"><span class="product-name">MacBook Pro</span></a>
+                    <div class="product-price">$2499.99</div>
+                </div>
+                <div class="product">
+                    <a href="#"><img src="img/macbook-pro.png" alt="product"></a>
+                    <a href="#"><span class="product-name">MacBook Pro</span></a>
+                    <div class="product-price">$2499.99</div>
+                </div>
+            </div> <!-- end products -->
+
+            <div class="text-center button-container">
+                <a href="#" class="button">View more products</a>
             </div>
-        </div>
+
+            </div> <!-- end container -->
+
+
+        </div> <!-- end featured section -->
+
+        <div class="blog-section">
+            <div class="container">
+                <h1 class="text-center">From Our Blog</h1>
+
+                <p class="section-description"> Allan Karlsson hesitated as he stood in the flowerbed that ran 
+                along one side of the Old People’s Home. He was wearing a brown jacket with brown trousers 
+                and on his feet he had a pair of brown indoor slippers. He was not a trendsetter; people 
+                rarely are at that age. He was on the run from his own birthday party, another unusual 
+                thing for a hundred-year-old, not least because even being one hundred is pretty rare.</p>
+
+                <div class="blog-posts">
+                    <div class="blog-post">
+                        <a href="#"><img src="img/blog1.png" alt="blog image"></a>
+                        <a href="#"><h2 class="blog-title">Blog Post Title 1</h2></a>
+                        <div class="blog-description">After a moment, he moved to the other toilet, but there 
+                        he faced a different problem. Evidently he didn’t want to be parted from his big grey 
+                        suitcase on wheels, but the cubicle was simply too small for the two of them.
+                        </div>
+                    </div>
+               
+                    <div class="blog-post">
+                        <a href="#"><img src="img/blog1.png" alt="blog image"></a>
+                        <a href="#"><h2 class="blog-title">Blog Post Title 1</h2></a>
+                        <div class="blog-description">Evidently he didn’t want to be parted from his big grey 
+                        suitcase on wheels, but the cubicle was simply too small for the two of them.
+                        </div>
+                    </div>
+              
+                    <div class="blog-post">
+                        <a href="#"><img src="img/blog1.png" alt="blog image"></a>
+                        <a href="#"><h2 class="blog-title">Blog Post Title 1</h2></a>
+                        <div class="blog-description">The little man told him that the bus left from outside the
+                         terminal door and that it would be most convenient to buy a ticket directly from 
+                         the driver.</div>   
+                    </div>
+
+                </div> <!-- end blog-posts -->
+            </div> <!-- end container -->
+        </div> <!-- end blog-section -->
+
+
+        <footer>
+            <div class="footer-content container">
+                <div class="made-with"> <i class="fa fa-heart"></i> by Ognjen Cicovic </div>
+            </div> <!-- end footer-content -->
+        </footer>
+
     </body>
 </html>
